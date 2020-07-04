@@ -20,6 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # What this does is: when we get to this page ''(default page),
-    # take us to url.py in base(app) folder and let that handle everything
+    # take us to urls.py in base(app) folder and let that handle everything
     path('', include('base.urls'))
 ]
