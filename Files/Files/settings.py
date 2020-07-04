@@ -118,4 +118,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+# This holds the paths to folder that holds our static files
+STATIC_URL = '/staticfiles/'
+
+# This lets the app know that all our media(images) files will be stored in this folder.
+MEDIA_URL = '/images/'
+
+# We are basically letting our web app know that in our main Files folder,
+# there's a staticfiles folder
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'staticfiles')
+]
