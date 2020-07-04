@@ -1,7 +1,94 @@
+
+
+
 {% load static %}
 
-<link href = "{% static '/css/main.css' %}", rel = "stylesheet", type = "text/css">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Falansh Siddh</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<h3>Hello World</h3>
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/falansh.jpg' %}" >
+					<hr>
+					<h4>Hi I'm Falansh!</h4>
+					<p>I love coding.</p>
+				</div>
+			</div>
 
-<img src = '{% static 'images/falansh.jpg' %}'>
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>About</h4>
+					<hr>
+                    <p>A young and enthusiastic undergrad having undivided passion towards accomplishing all of his goals.</p>
+					<p>From the very beginning of my journey in the field of Science I have been attracted towards Robotics and programming. I did various projects and also went abroad (NASA) to further extend my knowledge in this field. When I was on my Science trip to NASA I took part in many programs like Space Challenge Program, IT Wizard Programming & Productivity Program etc, which made my goals crystal clear. From that day on I made up my mind that I had to pursue my career in Data Science.</p>
+					<p>Since then, I have been paving my path step by step towards my goals.</p>
+                    <p>I am currently pursuing my B.Tech degree in Computer Science & Information Technology, apart from that I spend my time learning all the concept necessary to become a successful Data Scientists through various blogs and courses available online.</p>
+                    <p>Email: falansh.rs@gmail.com
+                    Github: https://github.com/fsiddh</p>
+					<ul class="social-links">
+						<li><img class="social" src="{% static 'images/facebook.png' %}"></li>
+						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+						<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+						<li><img class="social" src="{% static 'images/youtube.png' %}"></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Experience as a Developer</h5>
+					<hr>
+					<p>None</p>
+					<p>None.</p>
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>What I Know</h5>
+					<hr>
+					<p>Python, Django, HTML/CSS, C, Java, ML Algorithms, DSA and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
+					<p>Currently I am an Intern at INeuron</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Short Term Goals</h5>
+				<hr>
+				<p>I'm still learning and and doing small-mid level projects</p>
+				<p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>
